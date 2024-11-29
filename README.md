@@ -1,37 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simple Blog CRUD
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto é uma aplicação web simples de blog que demonstra operações CRUD (Create, Read, Update, Delete) usando React e Next.js. A aplicação consome a API JSONPlaceholder para simular um backend e permite aos usuários visualizar, adicionar, editar e excluir posts de blog.
+
+## Funcionalidades
+
+- Listar posts de blog
+- Adicionar novos posts
+- Editar posts existentes
+- Excluir posts
+- Interface responsiva e acessível
+
+## Tecnologias Utilizadas
+
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- JSONPlaceholder API
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+
+- Node.js (versão 14 ou superior)
+- npm (geralmente vem com o Node.js)
+
+## Instalação
+
+1. Clone o repositório:
+```bash
+ git clone https://github.com/seu-usuario/simple-blog-crud.git
+```
+
+2. Navegue até o diretório do projeto:
+
+```bash
+cd simple-blog-crud
+  ```
+
+3. Instale as dependências:
+
+```bash
+npm install
+   ```
+
+## Executando o Projeto
+
+Para iniciar o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Componentes Principais
 
-## Learn More
+- app/page.tsx: Componente principal que gerencia o estado e as operações CRUD.
+- components/AddPostForm.tsx: Formulário para adicionar novos posts.
+- components/PostList.tsx: Lista todos os posts.
+- components/PostItem.tsx: Representa um único post, com opções para editar e excluir.
 
-To learn more about Next.js, take a look at the following resources:
+## API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este projeto utiliza a [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) para simular operações de backend. Note que as alterações não são persistidas no servidor da API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distribuído sob a licença MIT. Veja \`LICENSE\` para mais informações.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# simple-blog
+
+
