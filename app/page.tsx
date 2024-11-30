@@ -37,7 +37,6 @@ export default function Home() {
     })
 
     const newPost = await response.json()
-    // Use o nextId para garantir uma chave única
     const postWithUniqueId = { ...newPost, id: nextId }
     setPosts([postWithUniqueId, ...posts])
     setNextId(nextId + 1)
